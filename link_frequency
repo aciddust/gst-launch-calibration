@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo 'min=0 max=0 default=0 flags=read-only'
+echo link_frequency : $1
+v4l2-ctl -c link_frequency=$1
+

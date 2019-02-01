@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo 'min=96 max=31199 step=1 default=96'
+echo vertical_blanking : $1
+v4l2-ctl -c vertical_blanking=$1
+

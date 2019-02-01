@@ -1,0 +1,4 @@
+#!/bin/sh
+echo 'min=4 max=1660 step=1 default=1536'
+echo exposure : $1
+v4l2-ctl -c exposure=$1

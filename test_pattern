@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo 'min=0 max=4 default=0'
+echo test_pattern : $1
+v4l2-ctl -c test_pattern=$1
+

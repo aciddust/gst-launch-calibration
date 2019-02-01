@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo 'min=0 max=120000000 step=1 default=120000000 flags=read-only'
+echo pixel_rate : $1
+v4l2-ctl -c pixel_rate=$1
+

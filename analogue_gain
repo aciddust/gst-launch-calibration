@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo 'min=16 max=248 step=1 default=16'
+echo analogue_gain : $1
+v4l2-ctl -c analogue_gain=$1
+

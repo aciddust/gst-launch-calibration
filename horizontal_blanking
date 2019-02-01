@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo 'min=2688 max=2688 step=1 default=2688 flags=read-only'
+echo horizontal_blanking : $1
+v4l2-ctl -c horizontal_blanking=$1
+
